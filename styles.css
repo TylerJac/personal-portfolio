@@ -1,0 +1,163 @@
+/* General Styles */
+
+/* Setting default styles for the body, including font, margins, padding, and flexbox properties */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #6400AD;  /* Dark purple background color */
+    color: #00AD64;  /* Light green text color */
+}
+
+/* Styling anchor tags inside the body */
+body a {
+    color: #fffdfd;  /* Off-white link color */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Adding underline on hover for links */
+body a:hover {
+    text-decoration: underline;
+}
+
+/* Header styling */
+header {
+    background-color: #00AD64;  /* Light green background color */
+    color: #ffffff;  /* White text color */
+    padding: 1rem 0;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;  /* Removing bullet points from the list */
+    display: flex;
+    justify-content: center;  /* Centering navigation items */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling individual navigation items */
+nav ul li {
+    margin: 0 1rem;
+}
+
+/* Styling links inside navigation items */
+nav ul li a {
+    color: #000000;  /* Black link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ensuring the container takes up available space */
+.container {
+    flex: 1;
+}
+
+/* Main content area styling */
+main {
+    padding: 2rem;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #AD6400;  /* Dark orange background color */
+    color: #000000;  /* Black text color */
+}
+
+/* Styling links inside the footer */
+footer a {
+    color: #000000;  /* Black link color */
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+/* Ensuring links in the footer are underlined on hover */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styling paragraph text inside the footer */
+footer p {
+    margin: 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Limiting the width of main sections and centering them */
+.about, .projects, .interests {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Making images responsive */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Adding bottom margin to project and interest sections */
+.project, .interest {
+    margin-bottom: 2rem;
+}
+
+/* Ensuring images inside project and interest sections are responsive */
+.project img, .interest img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling inside forms */
+form label {
+    margin-bottom: 0.5rem;
+}
+
+/* Input and textarea styling inside forms */
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styling buttons inside forms */
+form button {
+    padding: 0.5rem;
+    background-color: #00AD64;  /* Light green background color */
+    color: #fff;  /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Changing button background color on hover */
+form button:hover {
+    background-color: #04834e;  /* Darker green background color on hover */
+}
+
+/* Responsive Styles */
+
+/* Adjusting navigation layout for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
