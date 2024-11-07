@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #6400AD;  /* Dark purple background color */
+    background-color: black;  /* Dark purple background color */
     color: #00AD64;  /* Light green text color */
 }
 
@@ -28,7 +28,6 @@ body a:hover {
 /* Header styling */
 header {
     background-color: #00AD64;  /* Light green background color */
-    color: #ffffff;  /* White text color */
     padding: 1rem 0;
 }
 
