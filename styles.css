@@ -42,7 +42,8 @@ nav ul {
 
 /* Styling individual navigation items */
 nav ul li {
-    margin: 0 1rem;
+    display: inline;
+    margin-right: 15px;
 }
 
 /* Styling links inside navigation items */
