@@ -67,7 +67,7 @@ main {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #AD6400;  /* Dark orange background color */
+    background-color: #00AD64;  /* Dark orange background color */
     color: #000000;  /* Black text color */
 }
 
@@ -88,6 +88,26 @@ footer p {
     margin: 0;
     font-size: 1em;
     text-align: center;
+}
+ul {
+    list-style: none;  /* Removing bullet points from the list */
+    display: flex;
+    justify-content: center;  /* Centering navigation items */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling individual navigation items */
+ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Styling links inside navigation items */
+ul li a {
+    color: #000000;  /* Black link color */
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Limiting the width of main sections and centering them */
