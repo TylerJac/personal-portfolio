@@ -93,6 +93,7 @@ main {
 
 /* Footer styling */
 footer {
+    position: absolute;
     text-align: center;
     padding: 1rem 0;
     background-color: #00AD64;
