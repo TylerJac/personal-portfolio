@@ -9,13 +9,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: black;  /* Dark purple background color */
-    color: #00AD64;  /* Light green text color */
+    background-color: black;
+    color: #00AD64;
 }
 
 /* Styling anchor tags inside the body */
 body a {
-    color: #fffdfd;  /* Off-white link color */
+    color: #fffdfd;
     text-decoration: none;
     margin: 0 5px;
 }
@@ -27,15 +27,15 @@ body a:hover {
 
 /* Header styling */
 header {
-    background-color: #00AD64;  /* Light green background color */
+    background-color: #00AD64;
     padding: 1rem 0;
 }
 
 /* Navigation styling */
 nav ul {
-    list-style: none;  /* Removing bullet points from the list */
+    list-style: none;
     display: flex;
-    justify-content: center;  /* Centering navigation items */
+    justify-content: center;
     padding: 0;
     margin: 0;
 }
@@ -44,14 +44,33 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 15px;
+    font-weight: bold;
 }
 
 /* Styling links inside navigation items */
+/* Example: Pulse effect on navigation links */
 nav ul li a {
-    color: #000000;  /* Black link color */
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
+    animation: pulse 2s infinite; /* Applies pulse with a 2-second duration and repeats infinitely */
 }
+
+/* Example: Pulse effect on a button */
+button {
+    background-color: #00AD64;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+button:hover {
+    background-color: #04834e; /* Darker color on hover */
+    transform: scale(1.1); /* Grows slightly more on hover */
+}
+
 
 /* Ensuring the container takes up available space */
 .container {
@@ -67,13 +86,13 @@ main {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #00AD64;  /* Dark orange background color */
-    color: #000000;  /* Black text color */
+    background-color: #00AD64;
+    color: #000000;
 }
 
 /* Styling links inside the footer */
 footer a {
-    color: #000000;  /* Black link color */
+    color: #000000;
     text-decoration: underline;
     margin: 0 5px;
 }
@@ -88,26 +107,6 @@ footer p {
     margin: 0;
     font-size: 1em;
     text-align: center;
-}
-ul {
-    list-style: none;  /* Removing bullet points from the list */
-    display: flex;
-    justify-content: center;  /* Centering navigation items */
-    padding: 0;
-    margin: 0;
-}
-
-/* Styling individual navigation items */
-ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-/* Styling links inside navigation items */
-ul li a {
-    color: #000000;  /* Black link color */
-    text-decoration: none;
-    font-weight: bold;
 }
 
 /* Limiting the width of main sections and centering them */
@@ -146,38 +145,50 @@ form label {
     margin-bottom: 0.5rem;
 }
 
-/* Input and textarea styling inside forms */
-form input, form textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Styling buttons inside forms */
-form button {
-    padding: 0.5rem;
-    background-color: #00AD64;  /* Light green background color */
-    color: #fff;  /* White text color */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Changing button background color on hover */
-form button:hover {
-    background-color: #04834e;  /* Darker green background color on hover */
-}
-
 /* Responsive Styles */
 
 /* Adjusting navigation layout for smaller screens */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
         margin: 0.5rem 0;
     }
+
+    main {
+        padding: 1rem;
+    }
+
+    .about, .projects, .interests {
+        padding: 1rem;
+    }
 }
+
+/* Smaller mobile screens adjustments */
+@media (max-width: 480px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0.3rem 0;
+    }
+
+    main {
+        padding: 1rem 0.5rem;
+    }
+
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Slightly larger on pulse */
+    }
+}
+
