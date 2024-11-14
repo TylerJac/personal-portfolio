@@ -78,8 +78,12 @@ button:hover {
 
 
 /* Ensuring the container takes up available space */
+
 .container {
-    flex: 1;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Main content area styling */
@@ -169,7 +173,7 @@ form label {
     margin-bottom: 0.5rem;
 }
 .responsive-img {
-    max-width: 90%; /* Adjusts image width to 80% of its container */
+    width: auto; /* Adjusts image width to 80% of its container */
     height: auto; /* Maintains aspect ratio */
     display: block;
     margin: 1rem auto; /* Centers the image */
