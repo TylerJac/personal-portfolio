@@ -90,9 +90,34 @@ footer {
     color: #000000;
 }
 
+/* Footer links styling */
+.footer-links {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the links */
+    gap: 15px; /* Add space between links */
+}
+
+.footer-links li {
+    display: inline; /* Display links inline */
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ensuring links in the footer are underlined on hover */
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /* Styling links inside the footer */
 footer a {
-    color: #000000;
+    color: #000000;  /* Black link color */
     text-decoration: underline;
     margin: 0 5px;
 }
@@ -108,6 +133,7 @@ footer p {
     font-size: 1em;
     text-align: center;
 }
+
 
 /* Limiting the width of main sections and centering them */
 .about, .projects, .interests {
@@ -144,11 +170,20 @@ form {
 form label {
     margin-bottom: 0.5rem;
 }
+.responsive-img {
+    max-width: 60%; /* Adjusts image width to 80% of its container */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 1rem auto; /* Centers the image */
+}
 
 /* Responsive Styles */
 
 /* Adjusting navigation layout for smaller screens */
 @media (max-width: 768px) {
+    .responsive-img {
+        max-width: 100%; /* Allows image to be fully responsive on smaller screens */
+    }
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -191,4 +226,3 @@ form label {
         transform: scale(1.05); /* Slightly larger on pulse */
     }
 }
-

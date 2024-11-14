@@ -28,12 +28,16 @@
         </main>
     </div>
     <footer>
-        <ul>
+        <ul class="footer-links">
             <li><a href="https://github.com/TylerJac">GitHub</a></li>
             <li>Email: tylerajackson76@gmail.com</li>
             <li><a href="https://www.linkedin.com/in/tyler-jackson-9072a5337/">Linkedin</a></li>
         </ul>
-        <p>&copy; 2024 Tyler Jackson</p>
+        <p>&copy; <span id="year"></span> Tyler Jackson. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear().toString();
+    </script>
 </body>
 </html>
