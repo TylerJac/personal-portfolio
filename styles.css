@@ -88,12 +88,11 @@ button:hover {
 /* Ensuring the container takes up available space */
 
 .container {
-    /*flex-wrap: wrap; !* Allows items to wrap on smaller screens *!*/
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
     max-width: 1200px;
     width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-
+    justify-content: center;
+    align-items: center;
     flex: 1;
 }
 
