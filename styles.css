@@ -7,7 +7,8 @@
 
 body, html {
     height: 100%; /* Set full height for the body and html */
-
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -18,8 +19,6 @@ body {
     padding: 0;
     background-color: black;
     color: #00AD64;
-    display: flex;
-    flex-direction: column;
 }
 h1 {
     font-weight: bold;
@@ -92,8 +91,9 @@ button:hover {
     /*flex-wrap: wrap; !* Allows items to wrap on smaller screens *!*/
     max-width: 1200px;
     width: 90%;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+
     flex: 1;
 }
 
