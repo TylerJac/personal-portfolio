@@ -93,7 +93,7 @@ main {
 
 /* Footer styling */
 footer {
-    position: fixed;
+    position: sticky;
     text-align: center;
     padding: 1rem 0;
     width: 100%;
