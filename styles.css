@@ -84,6 +84,7 @@ button:hover {
     flex-wrap: wrap; /* Allows items to wrap on smaller screens */
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 /* Main content area styling */
@@ -93,10 +94,8 @@ main {
 
 /* Footer styling */
 footer {
-    position: sticky;
     text-align: center;
     padding: 1rem 0;
-    width: 100%;
     bottom: 0;
     background-color: #00AD64;
     color: #000000;
