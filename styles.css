@@ -1,4 +1,7 @@
 /* General Styles */
+body, html {
+    height: 100%; /* Set full height for the body and html */
+}
 
 /* Setting default styles for the body, including font, margins, padding, and flexbox properties */
 body {
