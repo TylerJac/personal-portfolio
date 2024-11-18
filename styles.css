@@ -93,9 +93,11 @@ main {
 
 /* Footer styling */
 footer {
-    position: absolute;
+    position: fixed;
     text-align: center;
     padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
     background-color: #00AD64;
     color: #000000;
 }
