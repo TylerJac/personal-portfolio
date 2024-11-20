@@ -68,6 +68,15 @@ nav ul li a {
     font-weight: bold;
     animation: pulse 2s infinite; /* Applies pulse with a 2-second duration and repeats infinitely */
 }
+.credit {
+    font-size: 0.1em;
+    text-align: center;
+    color: #888; /* Light gray text */
+
+}
+.credit a {
+    color: #888;
+}
 
 /* Example: Pulse effect on a button */
 button {
